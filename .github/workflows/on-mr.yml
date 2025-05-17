@@ -22,8 +22,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run app
-        run: npm run start
-
       - name: Run cypress
-        run: npm run cy:run
+        run: npm run cy:test
