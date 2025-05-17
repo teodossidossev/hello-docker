@@ -31,7 +31,7 @@ describe('Simple Message UI', () => {
         cy.wait('@postMessage');
         cy.wait('@getMessages');
 
-        cy.get('#messagesList').should('contain', testMessage);
+        cy.get('#messagesList').should('contain', 'Foo');
     });
 
     it('should not submit empty messages', () => {
