@@ -6,7 +6,8 @@
   "scripts": {
     "start": "http-server public -p 8080",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:test": "http-server public -p 8080 & cypress run"
   },
   "devDependencies": {
     "cypress": "^14.3.3",
