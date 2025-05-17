@@ -4,8 +4,12 @@
   "description": "Simple Dockerized Node.js web server",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "http-server public -p 8080",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
-  "dependencies": {
+  "devDependencies": {
+    "cypress": "^14.3.3",
+    "http-server": "^14.1.1"
   }
 }
